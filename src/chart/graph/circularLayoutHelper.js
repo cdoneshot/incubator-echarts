@@ -41,7 +41,7 @@ export function circularLayout(seriesModel) {
         graph.nodes[0].setLayout([cx, cy]);
     }
  else {
-        graph.eachNode((node, index) => {
+        graph.eachNode(function (node, index) {
             // ignore value
             // var value = node.getValue('value');
             angle = unitAngle * index;
